@@ -140,20 +140,6 @@
         "frameworks": ["nist_rmf", "ztm"],
         "guidance": "Integrate secure deployment practices and continuous monitoring into the AI lifecycle, ensuring operational security throughout.",
         "resourceRefs": ["nist_rmf", "ztm"]
-      },
-      {
-        "id": "ai_threat_hunters",
-        "name": "AI Threat Hunters/Red Teamers",
-        "frameworks": ["mitre_attack", "mitre_atlas", "nist_ai_aml"],
-        "guidance": "Conduct proactive adversarial testing, threat hunting, and red teaming focused on AI vulnerabilities and adversarial risks.",
-        "resourceRefs": ["mitre_attack", "mitre_atlas", "nist_ai_aml"]
-      },
-      {
-        "id": "ai_governance",
-        "name": "AI Governance/Ethics Officers",
-        "frameworks": ["nist_rmf", "nist_csf"],
-        "guidance": "Oversee ethical AI practices, ensure regulatory compliance, and align AI strategies with overall organizational risk management.",
-        "resourceRefs": ["nist_rmf", "nist_csf"]
       }
     ]
   }
