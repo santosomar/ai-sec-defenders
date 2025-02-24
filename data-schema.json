@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "AI Security Guidance Data",
+    "type": "object",
+    "properties": {
+      "resources": {
+        "type": "array",
+        "description": "A list of unique resources used by the personas.",
+        "items": {
+          "type": "object",
+          "required": ["id", "title", "url"],
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "A unique identifier for the resource (e.g., 'nist_rmf')."
+            },
+            "title": {
+              "type": "string",
+              "description": "The display title of the resource (e.g., 'NIST AI RMF')."
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "The URL of the resource."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "personas": {
+        "type": "array",
+        "description": "A list of personas with their associated frameworks, guidance, and resource references.",
+        "items": {
+          "type": "object",
+          "required": ["id", "name", "frameworks", "guidance", "resourceRefs"],
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "A unique identifier for the persona (e.g., 'executives')."
+            },
+            "name": {
+              "type": "string",
+              "description": "The display name of the persona (e.g., 'Executives')."
+            },
+            "frameworks": {
+              "type": "array",
+              "description": "A list of resource IDs representing frameworks relevant to the persona.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "guidance": {
+              "type": "string",
+              "description": "Guidance text for the persona."
+            },
+            "resourceRefs": {
+              "type": "array",
+              "description": "A list of resource IDs that provide additional resources for the persona.",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": ["resources", "personas"],
+    "additionalProperties": false
+  }
+  
