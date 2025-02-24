@@ -1,0 +1,160 @@
+{
+    "resources": [
+      {
+        "id": "nist_rmf",
+        "title": "NIST AI RMF",
+        "url": "https://www.nist.gov/ai-risk-management-framework"
+      },
+      {
+        "id": "nist_csf",
+        "title": "NIST CSF 2.0",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "id": "ztm",
+        "title": "Zero Trust Maturity Model",
+        "url": "https://www.cisa.gov/ztm"
+      },
+      {
+        "id": "nist_sp80037",
+        "title": "NIST SP 800-37",
+        "url": "https://www.nist.gov/publications/nist-special-publication-800-37"
+      },
+      {
+        "id": "mitre_attack",
+        "title": "MITRE ATT&CK",
+        "url": "https://attack.mitre.org/"
+      },
+      {
+        "id": "mitre_atlas",
+        "title": "MITRE ATLAS",
+        "url": "https://atlas.mitre.org/"
+      },
+      {
+        "id": "mitre_capec",
+        "title": "MITRE CAPEC",
+        "url": "https://capec.mitre.org/"
+      },
+      {
+        "id": "owasp_llms",
+        "title": "OWASP Top 10 for LLMs",
+        "url": "https://owasp.org/www-project-top-10-llm-applications/"
+      },
+      {
+        "id": "nist_ai_aml",
+        "title": "NIST AI AML",
+        "url": "https://www.nist.gov/ai-adversarial-machine-learning"
+      },
+      {
+        "id": "nist_ai_gai",
+        "title": "NIST AI GAI",
+        "url": "https://www.nist.gov/ai-generative-ai"
+      },
+      {
+        "id": "owasp_red_team_guide",
+        "title": "OWASP GenAI Red Teaming Guide",
+        "url": "https://genaisecurityproject.com/resource/genai-red-teaming-guide/"
+      }
+    ],
+    "personas": [
+      {
+        "id": "executives",
+        "name": "Executives",
+        "frameworks": ["nist_rmf", "nist_csf", "ztm"],
+        "guidance": "Define the organization's risk tolerance, align strategy with business objectives, and oversee governance and compliance for AI systems.",
+        "resourceRefs": ["nist_rmf", "nist_csf", "ztm"]
+      },
+      {
+        "id": "ciso",
+        "name": "CISO/SSO",
+        "frameworks": ["nist_sp80037", "mitre_attack", "nist_rmf"],
+        "guidance": "Implement and oversee security strategies specific to AI, including threat modeling, risk assessments, and integration of AI-specific controls.",
+        "resourceRefs": ["nist_sp80037", "mitre_attack", "nist_rmf"]
+      },
+      {
+        "id": "service_architects",
+        "name": "Service Architects",
+        "frameworks": ["nist_rmf", "owasp_llms", "ztm"],
+        "guidance": "Design secure AI service architectures, ensuring that the AI system's design aligns with operational security and scalability requirements.",
+        "resourceRefs": ["nist_rmf", "owasp_llms", "ztm"]
+      },
+      {
+        "id": "it_architects",
+        "name": "IT Architects",
+        "frameworks": ["nist_sp80037", "ztm", "owasp_llms"],
+        "guidance": "Ensure that AI and IT infrastructures are securely integrated by establishing secure data pipelines and safe deployment practices.",
+        "resourceRefs": ["nist_sp80037", "ztm", "owasp_llms"]
+      },
+      {
+        "id": "security_architects",
+        "name": "Security Architects",
+        "frameworks": ["mitre_attack", "mitre_atlas", "mitre_capec", "owasp_llms"],
+        "guidance": "Identify vulnerabilities specific to AI systems, integrate robust security controls, and develop threat detection mechanisms tailored to AI risks.",
+        "resourceRefs": ["mitre_attack", "mitre_atlas", "mitre_capec", "owasp_llms"]
+      },
+      {
+        "id": "it_operations",
+        "name": "IT Operations",
+        "frameworks": ["nist_csf", "nist_sp80037", "owasp_llms"],
+        "guidance": "Manage day-to-day operations, ensuring the secure functioning and continuous monitoring of AI systems.",
+        "resourceRefs": ["nist_csf", "nist_sp80037"]
+      },
+      {
+        "id": "soc_operations",
+        "name": "SOC Operations",
+        "frameworks": ["mitre_attack", "nist_ai_aml", "owasp_llms"],
+        "guidance": "Monitor for AI-related threats in real time, respond to incidents, and integrate AI-specific threat intelligence into SOC operations.",
+        "resourceRefs": ["mitre_attack", "nist_ai_aml"]
+      },
+      {
+        "id": "service_operations",
+        "name": "Service Operations",
+        "frameworks": ["nist_csf", "owasp_llms", "ztm"],
+        "guidance": "Oversee AI service deployments and operational compliance while supporting both pre-deployment testing and post-deployment monitoring.",
+        "resourceRefs": ["nist_csf", "ztm", "owasp_red_team_guide"]
+      },
+      {
+        "id": "auditors",
+        "name": "Auditors/Policy Makers",
+        "frameworks": ["nist_rmf", "nist_sp80037", "owasp_llms"],
+        "guidance": "Develop policies and standards for secure AI adoption, perform audits, and ensure compliance with regulatory and ethical standards.",
+        "resourceRefs": ["nist_rmf", "nist_sp80037"]
+      },
+      {
+        "id": "researchers",
+        "name": "Researchers/Data Scientists",
+        "frameworks": ["owasp_llms", "nist_rmf", "mitre_attack"],
+        "guidance": "Focus on developing robust, adversarially resilient AI models, conducting research on vulnerabilities, and improving AI explainability and fairness.",
+        "resourceRefs": ["owasp_llms", "nist_rmf"]
+      },
+      {
+        "id": "users",
+        "name": "Users/Practitioners",
+        "frameworks": ["nist_csf", "owasp_llms", "nist_ai_gai"],
+        "guidance": "Adhere to AI usage policies, report suspicious behaviors, and provide feedback to improve the continuous evolution of AI systems.",
+        "resourceRefs": ["nist_csf", "nist_ai_gai"]
+      },
+      {
+        "id": "mLOps",
+        "name": "MLOps/DevOps Engineers",
+        "frameworks": ["nist_rmf", "ztm"],
+        "guidance": "Integrate secure deployment practices and continuous monitoring into the AI lifecycle, ensuring operational security throughout.",
+        "resourceRefs": ["nist_rmf", "ztm"]
+      },
+      {
+        "id": "ai_threat_hunters",
+        "name": "AI Threat Hunters/Red Teamers",
+        "frameworks": ["mitre_attack", "mitre_atlas", "nist_ai_aml"],
+        "guidance": "Conduct proactive adversarial testing, threat hunting, and red teaming focused on AI vulnerabilities and adversarial risks.",
+        "resourceRefs": ["mitre_attack", "mitre_atlas", "nist_ai_aml"]
+      },
+      {
+        "id": "ai_governance",
+        "name": "AI Governance/Ethics Officers",
+        "frameworks": ["nist_rmf", "nist_csf"],
+        "guidance": "Oversee ethical AI practices, ensure regulatory compliance, and align AI strategies with overall organizational risk management.",
+        "resourceRefs": ["nist_rmf", "nist_csf"]
+      }
+    ]
+  }
+  
