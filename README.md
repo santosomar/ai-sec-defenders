@@ -1,14 +1,13 @@
 # AI Security Guidance Tool
 
-The AI Security Guidance Tool is a modern, web-based application that provides tailored guidance on AI security frameworks based on user-selected personas. This tool helps organizations and security professionals quickly access role-specific information—linking frameworks, guidance, and resources—to improve the security posture of their AI systems.
+This tool provides tailored guidance on AI security frameworks based on user-selected personas. It helps organizations and security professionals quickly access role-specific information, linking frameworks, guidance, and resources to improve the security posture of their AI systems. This tool is a work-in-progress proof-of-concept created by Omar Santos.
 
 ## Features
 
 - **Dynamic Persona Selection:** Choose from various personas (e.g., Executives, CISO/SSO, IT Architects) using a dropdown menu.
 - **Tailored Guidance:** View role-specific guidance and recommended AI security frameworks.
-- **Unified Resources:** Displays a de-duplicated list of relevant resource links for each persona.
+- **Unified Resources:** Displays a list of relevant resource links for each persona.
 - **Modular Data Structure:** Data is stored in a separate JSON file (`data.json`) with a normalized structure for easy maintenance and future expansion.
-- **Modern Design:** Responsive, sleek design using HTML, CSS, Flexbox, and Google Fonts.
 
 ## Repository Structure
 
