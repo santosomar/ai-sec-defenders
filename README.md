@@ -1,6 +1,7 @@
 # AI Security Guidance Tool
 
-This tool provides tailored guidance on AI security frameworks based on user-selected personas. It helps organizations and security professionals quickly access role-specific information, linking frameworks, guidance, and resources to improve the security posture of their AI systems. This tool is a work-in-progress proof-of-concept created by Omar Santos.
+This tool provides tailored guidance on AI security frameworks based on user-selected personas. It helps organizations and security professionals quickly access role-specific information, linking frameworks, guidance, and resources to improve the security posture of their AI systems. This tool uses the concept of the [Coalition for Secure AI (CoSAI)](https://www.coalitionforsecureai.org/) workstream 2 ("[Preparing Defenders for a Changing Security Landscape](https://github.com/cosai-oasis/ws2-defenders)").
+This tool is a work-in-progress proof-of-concept created by Omar Santos.
 
 ## Features
 
